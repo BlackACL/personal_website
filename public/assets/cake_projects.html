@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cake Topper Edits</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #081B29;
+    color: #d720eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #081B29;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #a519b5; 
+}
+
+/* Footer Styles */
+
+footer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 1.4rem;
+            padding: 30px 0;
+        }
+
+        footer p {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+/* Container Styles */
+.container {
+    padding: 100px 20px 20px; /* Adjust padding to account for fixed header */
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Title Styles */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #D146E1;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.title a {
+    color: #D146E1;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.title h1 {
+    margin-top: 100px; /* Adjusted for better spacing */
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.project {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    font-size: 16px; /* Adjusted for better readability */
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #a519b5, 1px 1px 40px #d720eb;
+}
+
+.project-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.project img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title h1 {
+        margin-top: 150px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .project {
+        width: 60%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .project {
+        width: 60%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/#projects">Back to Projects</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title">
+            <h1>Cake Topper Edits</h1>
+        </div>
+        <hr>
+        <div class="projects">
+            <div class="project">
+                <div class="project-title">Birthday Topper</div>
+                <img src="../uploads/Cake Topper 1.png">
+            </div>
+            <div class="project">
+                <div class="project-title">Birthday Topper</div>
+                <img src="../uploads/Topper2.png">
+            </div>
+            <div class="project">
+                <div class="project-title">Birthday Topper</div>
+                <img src="../uploads/Topper3.png">
+            </div>
+            <div class="project">
+                <div class="project-title">Birthday Topper</div>
+                <img src="../uploads/Topper4.jpg">
+            </div>
+            <div class="project">
+                <div class="project-title">Birthday Topper</div>
+                <img src="../uploads/Topper5.jpg">
+            </div>
+            <div class="project">
+                <div class="project-title">Birthday Topper</div>
+                <img src="../uploads/Topper6.jpg">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Angel Ladringan. All rights reserved.</p>
+</footer>
+</body>
+</html>
